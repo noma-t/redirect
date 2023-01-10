@@ -8,21 +8,16 @@
         }
     </style>
     <script>
-        window.onload = () => {
-
-        urlform = document.getElementById("urlform");
-        urlBox = document.getElementById("urlBox");
-        urlform.onsubmit = function() {
+        
+        function redirect() {
             alert(urlBox.value)
+            urlBox = document.getElementById("urlBox");
             window.location.href = urlBox.value
-        }
-
         }
     </script>
 </head>
 <body>
-    <form id="urlform">
-        <center><input type="text" id="urlBox"></center>
-    </form>
+    <input type="text" id="urlBox">
+    <button onclick="redirect();" id="submitButton">submit</button>
 </body>
 </html>
