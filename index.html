@@ -1,1 +1,28 @@
+<html>
+<head>
+    <title>redirecter</title>
+    <style>
+        #urlBox {
+            width: 80%;
+            height: 2em;
+        }
+    </style>
+    <script>
+        window.onload = () => {
 
+        urlform = document.getElementById("urlform");
+        urlBox = document.getElementById("urlBox");
+        urlform.onsubmit = function() {
+            alert(urlBox.value)
+            window.location.href = urlBox.value
+        }
+
+        }
+    </script>
+</head>
+<body>
+    <form id="urlform">
+        <center><input type="text" id="urlBox"></center>
+    </form>
+</body>
+</html>
